@@ -21,12 +21,12 @@ public class GmailTest {
 				driver.get("http://www.gmail.com");				
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				driver.manage().window().maximize();
-				driver.findElement(By.id("Email")).sendKeys("ravichandra.maddali@gmail.com");
+				driver.findElement(By.id("Email")).sendKeys("******");
 				driver.findElement(By.id("next")).click();
-				driver.findElement(By.id("Passwd")).sendKeys("Ravi2014");
+				driver.findElement(By.id("Passwd")).sendKeys("******");
 				driver.findElement(By.id("signIn")).click();
 				driver.findElement(By.xpath("//div[contains(text(),'COMPOSE')]")).click();
-		        driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys("naveenb29@gmail.com");
+		        driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys("*****");
 		        driver.findElement(By.xpath("//input[@name='subjectbox']")).sendKeys("test email using Selenium Script");
 		        //driver.findElement(By.xpath("//div[contains(text(),'Send')]")).click();
 		
